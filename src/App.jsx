@@ -3,8 +3,8 @@ import { createClient } from "@supabase/supabase-js";
 import "./index.css";
 
 const supabase = createClient(
-  "https://qvexzxnorbdqlscsakes.supabase.co", // Ganti dengan Supabase URL Anda
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF2ZXh6eG5vcmJkcWxzY3Nha2VzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgxNzQwNDEsImV4cCI6MjA2Mzc1MDA0MX0.GC2TYOjw-qre4ZNYws-eL1E-DyiPiRD1OKdRoy0cYhk" // Ganti dengan Supabase Anon Key Anda
+  import.meta.env.VITE_SUPABASE_URL,
+  import.meta.env.VITE_SUPABASE_ANON_KEY
 );
 
 function App() {

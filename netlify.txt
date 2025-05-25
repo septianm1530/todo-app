@@ -1,0 +1,10 @@
+[[redirects]]
+  from = "/api/*"
+  to = "https://qvexzxnorbdqlscsakes.supabase.co"
+  status = 200
+  force = true
+  headers = { 
+    "Access-Control-Allow-Origin" = "*"
+    "Access-Control-Allow-Headers" = "authorization, x-client-info, apikey, content-type"
+    "Access-Control-Allow-Methods" = "GET, POST, PUT, DELETE, OPTIONS"
+  }
